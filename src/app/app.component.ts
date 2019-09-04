@@ -15,7 +15,6 @@ export class AppComponent  {
     }
 
     addTab(){
-      setTimeout(() => this.billInfos.push({header:'Matter ' + this.billInfos.length, body:'Test ' + this.billInfos.length}));
-      
+        this.billInfos.push({header:'Matter ' + this.billInfos.length, body:'Test ' + this.billInfos.length});
     }
 }
