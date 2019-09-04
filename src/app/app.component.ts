@@ -9,8 +9,13 @@ import {ButtonModule} from 'primeng/button';
 })
 export class AppComponent  {
   display: boolean = false;
-
+  billInfos = [{header: 'Matter 0', body: 'Test 0'}]; 
     showDialog() {
         this.display = true;
+    }
+
+    addTab(){
+      setTimeout(() => this.billInfos.push({header:'Matter ' + this.billInfos.length, body:'Test ' + this.billInfos.length}));
+      
     }
 }
